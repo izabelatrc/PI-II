@@ -16,3 +16,25 @@
     box-sizing: border-box;
     /*Define que o tamanho do elemento será fixo e a borda e padding será desconto=ado na medida interna*/
 }
+
+.main {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-page {
+    font-family: Montserrat, semibold;
+    font-size: 1.875rem;
+}
+
+.name-user {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+}

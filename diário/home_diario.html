@@ -5,10 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Diário | Support Teens</title>
+    <link rel="stylesheet" href="style-home-diario.css">
 </head>
 
 <body>
+    <header>
+        <h1>Suport Teeens</h1>
+        <button><a href="#">Perfil</a></button>
+        <button><a href="#">
+                <menu>Menu</menu>
+            </a></button>
+    </header>
+    <main class="main">
+        <aside>
+            <div class="title">
+                <h1 class="title-page">Diário</h1>
+                <h2 class="name-user">Nome Sobrenome</h2>
+            </div>
+            <div id="options">
+                <div class="search">
+                    <label for="search">Busca</label>
+                    <input type="search" class="search-input" placeholder="Busca">
+                </div>
 
+                <div class="files">
+                    <button><a href="#">Pasta 1<a></button>
+                    <button><a href="#">Pasta 2<a></button>
+                    <button><a href="#">Pasta 3<a></button>
+
+                </div>
+                <div class="tags">
+                    <button><a href="#">Tag 1<a></button>
+                    <button><a href="#">Tag 2<a></button>
+                    <button><a href="#">Tag 3<a></button>
+                </div>
+                <div class="calendar">
+                    <label for="data">Selecione uma data:</label>
+                    <input type="date" id="data" name="data">
+                    <button onclick="filtrarPorData()">Filtrar</button>
+                    <!-- Seu conteúdo a ser filtrado aqui -->
+                    <div id="conteudo">
+                        <!-- Anotações e outros elementos -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section id="notes">
+            <div class="way">
+                <button><a href="#">Return<a></button>
+                <button><a href="#">Pasta<a></button>
+                <button><a href="#">Subpasta<a></button>
+            </div>
+            <div class="content">
+                <button><a href="#">Pasta 1<a></button>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+                <div class="note">
+                    <h6 class="date-note">Segunda, 12 de setembro, 2023</h6>
+                    <h3 class="title-note">Título</h3>
+                    <div class="note-content">Corpo do texto</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="links">Links</section>
+        <section class="copyright">Copyright</section>
+    </footer>
 </body>
 
 </html>
