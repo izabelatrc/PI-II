@@ -10,21 +10,32 @@
 
 <body>
     <header>
-        <h1>Suport Teeens</h1>
-        <button><a href="#">Perfil</a></button>
-        <button><a href="#">
-                <menu>Menu</menu>
-            </a></button>
+        <container class="header-logo">
+            <img src="src/svg/logo.svg" alt="Logo: aperto de mãos">
+            <h1>Suport Teeens</h1>
+        </container>
+        <container class="header-buttons">
+            <button><a href="#"><img src="src/svg/icon_profile-backgroud.svg" alt="Perfil"></a></button>
+            <button><a href="#">
+                    <img src="src/svg/icon _menu_.svg" alt="Menu">
+                </a></button>
+        </container>
     </header>
     <main>
-        <h1 class="title-page">Diário</h1>
         <aside id="options">
+            <div class="title">
+                <h1 class="title-page">Diário</h1>
+            </div>
             <div class="actions">
-                <button><a href="#">Home Diário</a></button>
-                <button><a href="#">Delete</a></button>
-                <button><a href="#">Print</a></button>
-                <button><a href="#">Previous page</a></button>
-                <button><a href="#">Next page</a></button>
+                <a href="#"><button class="home"><img src="src/svg/actions-home.svg" alt="Ícone de casa"></button></a>
+                <a href="#"><button class="delete"><img src="src/svg/actions-delete.svg"
+                            alt="Ícone de lixeira"></button></a>
+                <a href="#"><button class="print"><img src="src/svg/actions-print.svg"
+                            alt="Ícone de impressora"></button></a>
+                <a href="#"><button class="previous"><img src="src/svg/actions-previous.svg"
+                            alt="Ícone de seta para a esquerda"></button></a>
+                <a href="#"><button class="next"><img src="src/svg/actions-next.svg"
+                            alt="Ícone de seta para a direita"></button></a>
             </div>
             <div class="edit">
                 <button><a href="#">Editar</a></button>
