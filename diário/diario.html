@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-diario.css">
+    <script src="caminho-para-o-tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+
     <title>Diário | Support Teens</title>
 </head>
 
@@ -30,8 +32,8 @@
                 <a href="#"><button class="home"><img src="src/svg/actions-home.svg" alt="Ícone de casa"></button></a>
                 <a href="#"><button class="delete"><img src="src/svg/actions-delete.svg"
                             alt="Ícone de lixeira"></button></a>
-                <a href="#"><button class="print"><img src="src/svg/actions-print.svg"
-                            alt="Ícone de impressora"></button></a>
+                <button class="print" onclick="salvarPDF()"><img src="src/svg/actions-print.svg"
+                        alt="Ícone de impressora"></button>
                 <a href="#"><button class="previous"><img src="src/svg/actions-previous.svg"
                             alt="Ícone de seta para a esquerda"></button></a>
                 <a href="#"><button class="next"><img src="src/svg/actions-next.svg"
@@ -46,17 +48,30 @@
         </aside>
         <section id="diary">
             <div class="date">
-                <p>Segunda-feira, 12 de setembro de 2023</p>
-                <p>08:35</p>
+                <p id="dataHoje"></p>
+                <p id="horaAtual"></p>
             </div>
             <div class="toolbar">
-                <button><a href="#">Undo<a></button>
-                <button><a href="#">Clipboard</a></button>
-                <input type="color" name="">
+                <button><a href="#"><img src="src/svg/diary-toolbar-undo.svg" alt="Desfazer"></a></button>
+                <button><a href="#"><img src="src/svg/diary-toolbar-clipboard.svg" alt="Desfazer"></a></button>
+                <select id="fontSelect" onchange="mudarFonte()">
+                    <option value="Arial">Arial</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Noto Sans">Noto Sans</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+                <button onclick="diminuirFonte()"><a href="#"><b>A -</b></a></button>
+                <button onclick="aumentarFonte()"><a href="#"><b>A +</b></button>
+                <input type="color" id="corFonte" onchange="mudarCorFonte()" value="#000000">
             </div>
             <div class="note">
-                <input class="title-note" type="text">
-                <input class="body-text" type="text">
+                <div class="title-note">
+                    <input type="text">
+                    <div class="body-text">
+                        <textarea id="editor"></textarea>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -64,6 +79,9 @@
         <section class="links">Links</section>
         <section class="copyright">Copyright</section>
     </footer>
+
+    <script src="diario.js"></script>
 </body>
+
 
 </html>
