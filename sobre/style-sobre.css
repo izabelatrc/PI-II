@@ -247,31 +247,22 @@ article {
     background-color: var(--botton);
 }
 
-tbody {
-    font-family: Montserrat;
-    font-size: 1rem;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-}
-
-table th {
-    color: var(--font);
-}
-
-table td {
-    color: var(--font);
-    padding: 0.5% 0;
+.links {
+    width: 100%;
+    height: max-content;
+    background: var(--footer);
+    font-family: 'Noto Sans';
+    text-align: left;
+    padding-inline: 150px;
+    padding-block: 20px;
+    font-size: 0.85rem;
 }
 
 .copyright {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: Montserrat;
+    justify-content: center;
+    font-family: Noto Sans;
     font-size: 0.75rem;
-    color: var(--font);
     background-color: var(--footer2);
-    padding: 0.5% 0;
+    padding-block: 5px;
 }
